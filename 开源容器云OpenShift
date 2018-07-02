@@ -1,0 +1,27 @@
+好书
+
+开源容器云OpenShift 构建基于Kubernetes的企业应用云平台(完整版)
+
+
+京东
+
+
+
+https://blog.csdn.net/huqigang/article/details/77945723
+
+penshift/origin学习记录（7）——集成Jenkins服务
+2018年03月22日 15:42:38
+阅读数：2139
+学习资料来源于官方英文文档与《开源容器云OpenShift》一书，因为刚开始学习，不确定博客的正确性，以下内容仅供参考。
+
+Openshift项目提供了集成Openshift插件的Jenkins容器镜像和部署模板。 
+o 
+Openshift项目默认提供了两个Jenkins部署模板：jenkins-ephemeral-template、jenkins-persistent-template。
+
+jenkins-persistent-template 
+需要持久化卷的支持，其部署的Jenkins服务的数据可以被持久化。
+
+jenkins-ephemeral-template 
+部署的Jenkins服务的数据将在容器退出后丢失。适合测试使用。
+
+这里选择jenkins-ephemeral-template来做研究。 
